@@ -3,29 +3,48 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to my Portfolio</title>
+<link rel="stylesheet" href="css/sitewide.css">
+<link href="css/tables.css" rel="stylesheet">
+<link rel="stylesheet" href="css/fonts.css">
+    <title>Animation</title>
 </head>
-    <body>
-        <nav>
-            <a href="index.html">Home</a> |
-            <a href="homeport.html">Portfolio</a> |
-            <a href="resume.html">Resume</a> |
-            <a href="color_theory_home.html">Color Theory</a> |
-            <a href="typography_home.html">Typography</a> |
-        </nav>
-        <h1>Welcome to my Portfolio</h1>
-        <div>
-            <a href="homeport.html">Portfolio Home</a> |
-            <a href="magazine.html">Magazine</a> |
-            <a href="mediabanner.html">Media Banner</a> |
-            <a href="videogame.html">Video Game</a> |
-            <a href="#">Boy kicking Ball</a> |
+<body>
+    <main>
+        
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li> 
+            <li class="portfolio"><a href="homeport.html">Portfolio</a>
+                <ul>
+                    <li><a href="magazine.html">Magazine</a></li>
+                    <li><a href="mediabanner.html">Media Banner</a></li>
+                    <li><a href="videogame.html">Video Game</a></li>
+                    <li><a href="kickingball.html">Boy Kicking Ball</a></li>
+                </ul></li>
+            <li><a href="resume.html">Resume</a></li> 
+            <li class="color"><a href="color_theory_home.html">Color Theory</a>
+            <ul>
+                <li><a href="color_theory_overview.html">Color Theory Definition</a></li>
+                <li><a href="color_themes.html">Color Themes</a></li>
+                <li><a href="color_theory_article.html">Article</a></li>
+            </ul></li> 
+            <li class="typo"><a href="typography_home.html">Typography</a>
+            <ul>
+                <li><a href="typo_overview.html">Typography Overview</a></li>
+                <li><a href="font_type_article.html">Font Types</a></li>
+                <li><a href="typo_article.html">Article</a></li>
+            </ul></li> 
+            </ul>
+   </nav>
+   <h1 id="kickball">Animation Kicking Ball</h1>
+        <h2>This an Animated Video of an Boy Kicking a Ball</h2>
+        <div class="wrapper">
+            <div class="kicking">
+        <video src="videos/kicking.mp4" controls preload="auto" autoplay loop height="400" width="600" title="Boy kicking ball"></video>
         </div>
 
-        <h2>This an Animated Video of an Boy Kicking a Ball</h2>
-        <video src="videos/kicking.mp4" controls preload="auto" autoplay loop height="400" width="600" title="Boy kicking ball"></video>
-                <br>
-                <h3>Notes</h3>
+        <div id="div4" class="box">
+               <h3>Notes</h3>
               <ul>
                   <li>Using my character I made the following with lesson 4: character design, which dealt with the oval primitive tool and square primitive tool.</li>
                   <li>Chopped the upper and lower part of each arm and leg to convert into different symbols.</li>
@@ -38,11 +57,15 @@
                   <li>I also repeated the process for the ball.</li>
                   <li>Next I used a cartoon background I got off of google.</li>
               </ul>
+            </div>
+        </div>
+        </main>
+   
          <hr>
          <footer>
          <p>&copy; 2025 Portfolio (Chris Baribault). All rights reserved.</p>
            <a href="https://mail.yahoo.com/">
-            <img width="30" height="30" src="images/icons/yahoo.jpg" alt="Yahoo icon">
+            <img width="30" height="30" src="images/icons/yahoo2.png" alt="Yahoo icon">
            </a>
            <a href="https://www.facebook.com/">
             <img src="images/icons/facebook-icon.png" alt="Facebook Icon">

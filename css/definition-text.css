@@ -1,0 +1,152 @@
+h2 {
+    border-bottom: 2px solid #333;
+    padding-bottom: 5px;
+    color: #333;
+}
+
+#what-is {
+  padding: 0.5rem;
+}
+
+.box {
+  border: 3px ridge lightblue;
+  box-sizing: border-box;
+  margin: 1em auto;
+  padding: 1rem;
+  max-width: 80%;
+}
+
+/* CSS for images */
+.image-style {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 80%;
+}
+
+#term-links {
+  margin: 1rem;
+  background: aliceblue;
+  border: black solid 1px;
+  width: 200px;
+}
+
+section {
+  background: white;
+  border: 2px black;
+  box-sizing: border-box;
+  margin: 1rem;
+  padding: 1rem;
+  max-width: 75%;
+  text-align: left;
+}
+
+section h2 {
+  font-variant: small-caps;
+  margin: 0;
+}
+
+div a, 
+a:visited {
+  text-decoration: none;
+  color: blue;
+}
+
+div a:hover {
+  text-decoration: underline;
+}
+
+div a:active {
+  color: gray;
+}
+
+:target h2 {
+  font-style: italic;
+  text-decoration: underline;
+}
+
+
+section:hover {
+  box-shadow: 0 0 1rem 0.5rem rgba(14, 185, 211, 0.5);
+}
+
+section p:first-of-type::first-line {
+  font-style: italic;
+}
+
+section p:first-of-type::first-letter {
+  font-size: larger;
+  font-weight: bold;
+}
+
+article {
+  border: 2px solid lightblue;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  width: 96%;
+}
+
+a {
+  color: blue;
+  text-decoration: none;
+}
+
+#article img {
+  float: right;
+}
+
+article p:last-child::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+  a:hover {
+  color: purple;
+}
+
+h2 {
+  border-bottom: 2px solid #333;
+  padding-bottom: 5px;
+  color: #333;
+}
+
+article {
+background: white;
+border: 2px black;
+box-sizing: border-box;
+margin: 1rem;
+padding: 1rem;
+max-width: 75%;
+text-align: left;
+font-style: italic;
+}
+
+article h2 {
+font-variant: small-caps;
+margin: 0;
+}
+
+div a, 
+a:visited {
+text-decoration: none;
+color: blue;
+}
+
+div a:hover {
+text-decoration: underline;
+}
+
+div a:active {
+color: gray;
+}
+
+:target h2 {
+font-style: italic;
+text-decoration: underline;
+}
+
+article p:first-of-type::first-letter {
+font-size: larger;
+font-weight: bold;
+}

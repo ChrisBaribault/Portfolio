@@ -1,0 +1,90 @@
+@font-face {
+    font-family: 'sevenmoons';
+    src: url('../fonts/seven_moon/Seven\ Moon.ttf');
+}
+
+@font-face {
+    font-family: 'greatvibes';
+    src: url('../fonts/great-vibes/GreatVibes-Regular.otf');
+}
+
+@font-face {
+    font-family: 'font';
+    src: url('../fonts/magazine/Magazine.ttf');
+}
+
+@font-face {
+    font-family: 'milky';
+    src: url('../fonts/milky_vintage/MilkyVintage-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'tech';
+    src: url('../fonts/beat_tech/BEATTECH.otf');
+}
+
+@font-face {
+    font-family: 'fantasy';
+    src: url('../fonts/fantasy_magist/FANTASY\ MAGIST.otf');
+}
+
+#double-shadow {
+    color: black;
+    text-shadow: .1rem .1rem white, 
+    .2rem .2rem lightblue;
+    border: #cce;
+}
+
+#simple-shadow {
+    color: black;
+    text-shadow: -.1rem -.1rem lightblue;
+  }
+
+#double-shadow {
+    font-family: 'sevenmoons';
+    letter-spacing: 0.2rem;
+    word-spacing: 0.2rem;
+    font-size: 3rem;
+}
+
+#title {
+    font-family: 'greatvibes';
+    letter-spacing: 0.1rem;
+    font-size: 4rem;
+}
+
+#magazine {
+    font-family: 'font';
+    letter-spacing: 0.2rem;
+    word-spacing: 0.2rem;
+    font-size: 4rem;
+}
+
+#kickball {
+    font-family: 'milky';
+    letter-spacing: 0.2rem;
+    word-spacing: 0.2rem;
+    font-size: 4rem;
+}
+
+#banner {
+    font-family: 'tech';
+    letter-spacing: 0.2rem;
+    word-spacing: 0.2rem;
+    font-size: 3rem;
+}
+
+#game {
+    font-family: 'fantasy';
+    letter-spacing: 0.2rem;
+    word-spacing: 0.2rem;
+    font-size: 3rem;
+}
+
+#magazine , #kickball ,
+#banner , #game , #double-shadow
+ {
+  color: black;
+  text-shadow: .1rem .1rem white, 
+  .2rem .2rem lightblue;
+}

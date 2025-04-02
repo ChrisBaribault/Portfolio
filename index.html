@@ -3,26 +3,61 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="css/sitewide.css" rel="stylesheet">
+<link href="css/fonts.css" rel="stylesheet">
     <title>Welcome to my Homepage</title>
     </head>
+    <body>
+        <main>
     <nav>
-        <a href="#">Home</a> |
-        <a href="homeport.html">Portfolio</a> |
-        <a href="resume.html">Resume</a> |
-        <a href="color_theory_home.html">Color Theory</a> |
-        <a href="typography_home.html">Typography</a> |
+        <ul>
+        <li><a href="#">Home</a></li> 
+        <li class="portfolio"><a href="homeport.html">Portfolio</a>
+            <ul>
+                <li><a href="magazine.html">Magazine</a></li>
+                <li><a href="mediabanner.html">Media Banner</a></li>
+                <li><a href="videogame.html">Video Game</a></li>
+                <li><a href="kickingball.html">Boy Kicking Ball</a></li>
+            </ul></li>
+        <li><a href="resume.html">Resume</a></li> 
+        <li class="color"><a href="color_theory_home.html">Color Theory</a>
+        <ul>
+            <li><a href="color_theory_overview.html">Color Theory Definition</a></li>
+            <li><a href="color_themes.html">Color Themes</a></li>
+            <li><a href="color_theory_article.html">Article</a></li>
+        </ul></li> 
+        <li class="typo"><a href="typography_home.html">Typography</a>
+        <ul>
+            <li><a href="typo_overview.html">Typography Overview</a></li>
+            <li><a href="font_type_article.html">Font Types</a></li>
+            <li><a href="typo_article.html">Article</a></li>
+        </ul></li> 
+        </ul>
     </nav>
-    <h1>Hello Strangers! Welcome to my Website</h1>
-    <h3>My name is Christopher Baribault</h3><hr>
+    <div class="box">
+        <h1 id="double-shadow">Hello Strangers! Welcome to my Website <img src="images/star.png" width="100" height="70" title="star">
+        </h1>
+        <h3 id="simple-shadow">My name is Christopher Baribault</h3>
+        </div>
+            <ul>
+              <li><a href="#featured">Click for moving image</a></li>
+            </ul>
+    <section id="featured">
+        <h2><img alt="Tiny Runner" src="images/skate.png"></h2>
+        
+       
+</section>
 
 
-    <p>Disclosure: This is not a real website.</p>
 
+    
+    </main>
          <hr>
          <footer>
+            <p>Disclosure: This is not a real website.</p>
          <p>&copy; 2025 Portfolio (Chris Baribault). All rights reserved.</p>
            <a href="https://mail.yahoo.com/">
-            <img width="30" height="30" src="images/icons/yahoo.jpg" alt="Yahoo icon">
+            <img width="30" height="30" src="images/icons/yahoo2.png" alt="Yahoo icon">
            </a>
            <a href="https://www.facebook.com/">
             <img src="images/icons/facebook-icon.png" alt="Facebook Icon">

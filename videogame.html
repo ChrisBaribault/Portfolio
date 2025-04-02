@@ -3,26 +3,45 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to my Portfolio</title>
+<link rel="stylesheet" href="css/sitewide.css">
+<link href="css/tables.css" rel="stylesheet">
+<link rel="stylesheet" href="css/fonts.css">
+    <title>Video Game</title>
 </head>
-    <body>
-        <nav>
-            <a href="index.html">Home</a> |
-            <a href="homeport.html">Portfolio</a> |
-            <a href="resume.html">Resume</a> |
-            <a href="color_theory_home.html">Color Theory</a> |
-            <a href="typography_home.html">Typography</a> |
-        </nav>
-        <h1>Welcome to my Portfolio</h1>
-        <div>
-            <a href="homeport.html">Portfolio Home</a> |
-            <a href="magazine.html">Magazine</a> |
-            <a href="mediabanner.html">Media Banner</a> |
-            <a href="#">Video Game</a> |
-            <a href="kickingball.html">Boy kicking Ball</a> |
-        </div>
+<body>
+  <main>
+  <nav>
+      <ul>
+          <li><a href="index.html">Home</a></li> 
+          <li class="portfolio"><a href="homeport.html">Portfolio</a>
+              <ul>
+                  <li><a href="magazine.html">Magazine</a></li>
+                  <li><a href="mediabanner.html">Media Banner</a></li>
+                  <li><a href="videogame.html">Video Game</a></li>
+                  <li><a href="kickingball.html">Boy Kicking Ball</a></li>
+              </ul></li>
+          <li><a href="resume.html">Resume</a></li> 
+          <li class="color"><a href="color_theory_home.html">Color Theory</a>
+          <ul>
+              <li><a href="color_theory_overview.html">Color Theory Definition</a></li>
+              <li><a href="color_themes.html">Color Themes</a></li>
+              <li><a href="color_theory_article.html">Article</a></li>
+          </ul></li> 
+          <li class="typo"><a href="typography_home.html">Typography</a>
+          <ul>
+              <li><a href="typo_overview.html">Typography Overview</a></li>
+              <li><a href="font_type_article.html">Font Types</a></li>
+              <li><a href="typo_article.html">Article</a></li>
+          </ul></li> 
+          </ul>
+    </nav>
+    <h1 id="game">My Video Game Design</h1>
         <h2>Video game Opening</h2>
+        <div class="wrapper">
+          <div class="videogame">
         <video src="videos/finish.mp4" controls preload="auto" autoplay loop height="400" width="600"></video>
+        </div>
+        <div id="div3" class="box">
           <h3>Notes</h3>
             <ul>
                 <li>Open up animate, new file.</li>
@@ -42,11 +61,13 @@
                 <li>Then I created a new layer, and made a square. I created two key frames and messed with the shade of the color.</li>
                 <li>I then created motion tweens to give it the day and night look.</li>
               </ul>
-       
+            </div>
+          </div>
+          </main>
          <footer>
          <p>&copy; 2025 Portfolio (Chris Baribault). All rights reserved.</p>
            <a href="https://mail.yahoo.com/">
-            <img width="30" height="30" src="images/icons/yahoo.jpg" alt="Yahoo icon">
+            <img width="30" height="30" src="images/icons/yahoo2.png" alt="Yahoo icon">
            </a>
            <a href="https://www.facebook.com/">
             <img src="images/icons/facebook-icon.png" alt="Facebook Icon">

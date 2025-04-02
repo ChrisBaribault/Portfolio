@@ -3,50 +3,64 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to my Portfolio</title>
+<link rel="stylesheet" href="css/sitewide.css">
+<link rel="stylesheet" href="css/fonts.css">
+    <title>Resume</title>
 </head>
     <body>
+    <main>
         <nav>
-            <a href="index.html">Home</a> |
-            <a href="homeport.html">Portfolio</a> |
-            <a href="#">Resume</a> |
-            <a href="color_theory_home.html">Color Theory</a> |
-            <a href="typography_home.html">Typography</a> |
-             </nav>
-                <header>
-                    <div>
-                        <h1>Christopher Baribault</h1><hr>
-                    </div>
-                </header>
-        <section>
+            <ul>
+            <li><a href="index.html">Home</a><li></li> 
+            <li class="portfolio"><a href="homeport.html">Portfolio</a>
+                <ul>
+                    <li><a href="magazine.html">Magazine</a></li>
+                    <li><a href="mediabanner.html">Media Banner</a></li>
+                    <li><a href="videogame.html">Video Game</a></li>
+                    <li><a href="kickingball.html">Boy Kicking Ball</a></li>
+                </ul></li> 
+            <li><a href="#">Resume</a></li> 
+            <li class="color"><a href="color_theory_home.html">Color Theory</a>
+                <ul>
+                    <li><a href="color_theory_overview.html">Color Theory Definition</a></li>
+                    <li><a href="color_themes.html">Color Themes</a></li>
+                    <li><a href="color_theory_article.html">Article</a></li>
+            </ul></li> 
+            <li class="typo"><a href="typography_home.html">Typography</a>
+                <ul>
+                    <li><a href="typo_overview.html">Typography Overview</a></li>
+                    <li><a href="font_type_article.html">Font Types</a></li>
+                    <li><a href="typo_article.html">Article</a></li>
+                </ul></li>
+            </ul> 
+        </nav>
+        <h1 id="title">Resume</h1>
+        <main>
+        <div class="resume">
+            <header>
             <h2>Contact Information</h2>
-            <div>
                 <p>Email: Chris_Baribault@yahoo.com</p>
                 <p>Phone: (210) 248-4120</p>
                 <p>Address: 9443 Skywalker Ranch 78051</p>
-            </div>
-        </section>
-        <section>
+            </header>
+
+        <section class="summary">
             <h2>Professional Summary</h2>
-            <div>
                 <p>Certified HVAC-R Technician with 3 months of intensive lab hands-on training at National Technical Institute 
                     seeking position as a HVAC./R Technician with opportunities for further training and development. Seeking 
                     opportunity in residential and/or commercial sectors where I can utilize my newly gained knowledge in 
                     installation, service, and maintenance.  Committed to safety and high performance, thrives in a fast paced, 
                     challenging environment..</p>
-            </div>
-        </section>
-        <section>
+                </section>
+
+        <section class="experience">
             <h2>Work Experience</h2>
-            <div>
                 <h3>Head cook - Whataburger</h3>
                 <p>Jun 2018 - Nov 2020</p>
                 <ul>
                     <li>Over saw food perpetration and production safety procedures were followed during COVID-19</li>  
                     <li>Trained and guided 5 other line cooks, improving overall performance, service quality and productivity</li>
                 </ul>
-            </div>
-            <div>
                 <h3>CUSTODIAL ASSISTANT - SEAWORLD</h3>
                 <p>MAY	2016 - SEP	2017</p>
                 <ul>
@@ -54,9 +68,10 @@
                     <li>Conducted periodical inspections of equipment to ensure it met safety and functionality standards</li>  
                     <li>Maintained facilities and grounds safe and in compliance of state, county, city and federal standards</li>
                 </ul>
-            </div>
+            </section>
+
+            <section class="education">
             <h2>Education</h2>
-            <div>
                 <h3>HVAC-R Certification - National Technical Institute</h3>
                 <p>December 2019 - March 2020</p>
                 <ul>
@@ -64,8 +79,9 @@
                     <li>Recovering and Recycling Refrigerant</li> 
                     <li>Calculate Super heat and Subcooling</li>
                 </ul>
-            </div>
-            <section>
+            </section>
+
+            <section class="skills">
                 <h2>Skills</h2>
                    <ul>
                     <li>Valid Driver’s License</li>
@@ -75,23 +91,26 @@
                     <li>Temperatures both inside and out, prompt and attentive</li>
                    </ul>
             </section>
+            </div>
+            </main>
+        
 
-    <p>Disclosure: This is not a real website.</p>
-         </section>
+    
          <hr>
          <footer>
+            <p>Disclosure: This is not a real website.</p>
          <p>&copy; 2025 Resume (Chris Baribault). All rights reserved.</p>
            <a href="https://mail.yahoo.com/">
-            <img width="30" height="30" src="images/yahoo.jpg" alt="Yahoo icon">
+            <img width="30" height="30" src="images/icons/yahoo2.png" alt="Yahoo icon">
            </a>
            <a href="https://www.facebook.com/">
-            <img src="images/facebook-icon.png" alt="Facebook Icon">
+            <img src="images/icons/facebook-icon.png" alt="Facebook Icon">
            </a>
            <a href="https://www.linkedin.com/">
-            <img src="images/linkedin-icon.png" alt="linkedin Icon">
+            <img src="images/icons/linkedin-icon.png" alt="linkedin Icon">
            </a>
            <a href="https://twitter.com/webucator">
-            <img src="images/twitter-icon.png" alt="Twitter Icon">
+            <img src="images/icons/twitter-icon.png" alt="Twitter Icon">
            </a>
           </footer>
         </body>

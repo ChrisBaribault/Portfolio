@@ -3,29 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/sitewide.css">
+    <link href="css/tables.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/fonts.css">
     <title>Color Themes</title>
-    
-</head>
+    </head>
 <body>
-    <nav>
-        <a href="index.html">Home</a> |
-        <a href="homeport.html">Portfolio</a> |
-        <a href="resume.html">Resume</a> |
-        <a href="color_theory_home.html">Color Theory</a> |
-        <a href="typography_home.html">Typography</a> |
-    </nav>
-    <h1>Color Themes</h1>
-    <div>
-        <a href="color_theory_overview.html">Color Theory Definition</a> |
-        <a href="#">Color Themes</a> |
-        <a href="color_theory_article.html">Articles</a> |
-      </div>
+  <main>
+  <nav>
+    <ul>
+        <li><a href="index.html">Home</a></li> 
+        <li class="portfolio"><a href="homeport.html">Portfolio</a>
+            <ul>
+                <li><a href="magazine.html">Magazine</a></li>
+                <li><a href="mediabanner.html">Media Banner</a></li>
+                <li><a href="videogame.html">Video Game</a></li>
+                <li><a href="kickingball.html">Boy Kicking Ball</a></li>
+            </ul></li>
+        <li><a href="resume.html">Resume</a></li> 
+        <li class="color"><a href="color_theory_home.html">Color Theory</a>
+        <ul>
+            <li><a href="color_theory_overview.html">Color Theory Definition</a></li>
+            <li><a href="color_themes.html">Color Themes</a></li>
+            <li><a href="color_theory_article.html">Article</a></li>
+        </ul></li> 
+        <li class="typo"><a href="typography_home.html">Typography</a>
+        <ul>
+            <li><a href="typo_overview.html">Typography Overview</a></li>
+            <li><a href="font_type_article.html">Font Types</a></li>
+            <li><a href="typo_article.html">Article</a></li>
+        </ul></li> 
+        </ul>
+</nav>
+<h1 id="double-shadow">Color Themes</h1>
       <br>
       <table>
       <caption>Color Table</caption>
         <tr>
-          <td>Names</td>
-          <td>Images</td>
+          <th id="name">Names</th>
+          <th id="images">Images</th>
         </tr>
         <tr>
           <td>Monochromatic Colors</td>
@@ -33,7 +49,7 @@
         </tr>
         <tr>
           <td>Complementary Colors</td>
-          <td><img height="60" width="80" src="images/color-theory/comp_colors.jpg" title="Complementary"></td>
+          <td><img height="60" width="100" src="images/color-theory/comp_colors.jpg" title="Complementary"></td>
         </tr>
         <tr>
           <td>Split Complementary</td>
@@ -48,12 +64,14 @@
           <td><img height="80" width="80" src="images/color-theory/triadic.jpg" title="Triadic"></td>
         </tr>
       </table>
-      <p>Disclosure: This is not a real website.</p>
+      </main>
+      
     <hr>
     <footer>
+      <p>Disclosure: This is not a real website.</p>
     <p>&copy; 2025 Portfolio (Chris Baribault). All rights reserved.</p>
       <a href="https://mail.yahoo.com/">
-       <img width="30" height="30" src="images/icons/yahoo.jpg" alt="Yahoo icon">
+       <img width="30" height="30" src="images/icons/yahoo2.png" alt="Yahoo icon">
       </a>
       <a href="https://www.facebook.com/">
        <img src="images/icons/facebook-icon.png" alt="Facebook icon">

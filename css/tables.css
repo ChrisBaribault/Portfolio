@@ -1,0 +1,88 @@
+
+  body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+  }
+
+  .box {
+    border: 2px solid lightblue;
+    height: 100%;
+    padding: 1rem;
+    margin: 1rem;
+    width: 500px;
+  }
+
+  #div1 {
+    background-image: url(../images/cherry-blossoms.png);
+    background-size: cover;
+  }
+
+  #div2 {
+    background-image: url(../images/tech.jpg);
+    background-size: cover;
+    color: azure;
+  }
+
+  #div3 {
+    background-image: url(../images/branch3.jpg);
+    background-size: cover;
+    color: rgb(210, 71, 71);
+    background-position: bottom;
+  }
+
+  #div4 {
+    background-image: url(../images/redball.png);
+    background-size: cover;
+    color: lightblue;
+    outline: none;
+  }
+
+  #div5 {
+    background-color: aliceblue;
+  }
+
+  caption {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 1rem;
+    text-decoration: underline;
+    color: black;
+  }
+
+  i {
+    font-size: 4rem;
+  }
+
+
+  img {
+      vertical-align: middle;
+      }
+
+  .wrapper {
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  table,
+th,
+td {
+  border: solid lightblue 3px;
+  padding: 0.2rem;
+}
+
+th {
+    background-color: lightblue;
+}
+
+  caption {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 1rem;
+    text-decoration: underline;
+    color: black;
+  }
