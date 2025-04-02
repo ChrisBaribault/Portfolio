@@ -82,7 +82,7 @@
 }
 
 #magazine , #kickball ,
-#banner , #game , #double-shadow
+#banner , #game , #double-shadow, #title
  {
   color: black;
   text-shadow: .1rem .1rem white, 
