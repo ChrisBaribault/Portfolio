@@ -8,7 +8,7 @@
   }
 
   .box {
-    border: 2px solid lightblue;
+    border: 4px solid lightblue;
     height: 100%;
     padding: 1rem;
     margin: 1rem;
@@ -18,26 +18,31 @@
   #div1 {
     background-image: url(../images/cherry-blossoms.png);
     background-size: cover;
+    font-weight: bold;
   }
 
   #div2 {
-    background-image: url(../images/tech.jpg);
+    background-color: whitesmoke;
     background-size: cover;
-    color: azure;
+    color: black;
+    font-weight: bold;
   }
 
   #div3 {
-    background-image: url(../images/branch3.jpg);
+    background-image: url(../images/branch3.jpg.png);
     background-size: cover;
-    color: rgb(210, 71, 71);
+    color: rgb(30, 28, 28);
     background-position: bottom;
+    font-weight: bold;
   }
 
   #div4 {
     background-image: url(../images/redball.png);
     background-size: cover;
-    color: lightblue;
+    background-position: 40%;
+    color: black;
     outline: none;
+    font-weight: bold;
   }
 
   #div5 {
