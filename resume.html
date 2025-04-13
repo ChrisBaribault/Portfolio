@@ -6,6 +6,7 @@
 <link rel="stylesheet" href="css/resume.css">
 <link rel="stylesheet" href="css/sitewide.css">
 <link rel="stylesheet" href="css/fonts.css">
+
     <title>Resume</title>
 </head>
     <body>
@@ -39,28 +40,30 @@
         <div class="container">
             <header>
             <h2>Contact Information</h2>
-                <p>Email: Chris_Baribault@yahoo.com</p>
-                <p>Phone: (210) 248-4120</p>
-                <p>Address: 9443 Skywalker Ranch 78051</p>
+                <p>Email: Chris_Baribault@yahoo.com</br>
+                    Phone: (210) 248-4120</br>
+                    Address: 9443 Skywalker Ranch 78051</p>
             </header>
+            </div>
+        <button type="button" class="collapsible">Professional Summary</button>
+        <div class="content">
+            <p>Certified HVAC-R Technician with 3 months of intensive lab hands-on training at National Technical Institute 
+                seeking position as a HVAC./R Technician with opportunities for further training and development. Seeking 
+                opportunity in residential and/or commercial sectors where I can utilize my newly gained knowledge in 
+                installation, service, and maintenance.  Committed to safety and high performance, thrives in a fast paced, 
+                challenging environment..</p>
+        </div>
 
-        <section class="section">
-            <h2>Professional Summary</h2>
-                <p>Certified HVAC-R Technician with 3 months of intensive lab hands-on training at National Technical Institute 
-                    seeking position as a HVAC./R Technician with opportunities for further training and development. Seeking 
-                    opportunity in residential and/or commercial sectors where I can utilize my newly gained knowledge in 
-                    installation, service, and maintenance.  Committed to safety and high performance, thrives in a fast paced, 
-                    challenging environment..</p>
-                </section>
-
-        <section class="section">
-            <h2>Work Experience</h2>
+        <button type="button" class="collapsible">Work Experience</button>
+        <div class="content">
                 <h3>Head cook - Whataburger</h3>
                 <p>Jun 2018 - Nov 2020</p>
                 <ul>
                     <li>Over saw food perpetration and production safety procedures were followed during COVID-19</li>  
                     <li>Trained and guided 5 other line cooks, improving overall performance, service quality and productivity</li>
                 </ul>
+            
+
                 <h3>CUSTODIAL ASSISTANT - SEAWORLD</h3>
                 <p>MAY	2016 - SEP	2017</p>
                 <ul>
@@ -68,10 +71,10 @@
                     <li>Conducted periodical inspections of equipment to ensure it met safety and functionality standards</li>  
                     <li>Maintained facilities and grounds safe and in compliance of state, county, city and federal standards</li>
                 </ul>
-            </section>
+        </div>
 
-            <section class="section">
-            <h2>Education</h2>
+            <button type="button" class="collapsible">Education</button>
+            <div class="content">
                 <h3>HVAC-R Certification - National Technical Institute</h3>
                 <p>December 2019 - March 2020</p>
                 <ul>
@@ -79,10 +82,10 @@
                     <li>Recovering and Recycling Refrigerant</li> 
                     <li>Calculate Super heat and Subcooling</li>
                 </ul>
-            </section>
+            </div>
 
-            <section class="section">
-                <h2>Skills</h2>
+                <button type="button" class="collapsible">Skills</button>
+                <div class="content">
                    <ul>
                     <li>Valid Driver’s License</li>
                     <li>No vehicular moving violations</li> 
@@ -90,11 +93,24 @@
                     <li>Worked in extreme</li> 
                     <li>Temperatures both inside and out, prompt and attentive</li>
                    </ul>
-            </section>
             </div>
-            </main>
-        
+            <script>
+                var coll = document.getElementsByClassName("collapsible");
+                var i;
 
+                for (i = 0; i < coll.length; i++) {
+                coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.display === "block") {
+                  content.style.display = "none";
+                } else {
+                 content.style.display = "block";
+                 }
+                 });
+                    }
+            </script>
+            </main>
     
          <hr>
          <footer>

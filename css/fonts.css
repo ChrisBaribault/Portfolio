@@ -29,22 +29,22 @@
 }
 
 #double-shadow {
-    color: black;
+ /*   color: black; 
     text-shadow: .1rem .1rem white, 
-    .2rem .2rem lightblue;
+    .2rem .2rem lightblue; */
     border: #cce;
 }
 
 #simple-shadow {
-    color: black;
+  /*  color: black; */
     text-shadow: -.1rem -.1rem lightblue;
   }
 
 #double-shadow {
     font-family: 'sevenmoons';
-    letter-spacing: 0.2rem;
+ /*   letter-spacing: 0.2rem;
     word-spacing: 0.2rem;
-    font-size: 3rem;
+    font-size: 3rem; */
 }
 
 #title {
@@ -84,7 +84,12 @@
 #magazine , #kickball ,
 #banner , #game , #double-shadow, #title
  {
-  color: black;
+ /* color: black;
   text-shadow: .1rem .1rem white, 
-  .2rem .2rem lightblue;
+  .2rem .2rem lightblue; */
 }
+
+option {
+    font-size: 1rem;
+}
+

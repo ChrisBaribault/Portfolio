@@ -1,0 +1,35 @@
+body.light-mode {
+    background-color: white;
+    color: black;
+}
+
+body.dark-mode {
+    background-color: black;
+    color: white;
+}
+
+.header {
+  width: 100%;
+  padding: 5px 0px;
+  text-align: right;
+}
+.header h2 {
+  color: white;
+  margin: 0;
+}
+
+button {
+    margin: 10px;
+    padding: 5px 5px;
+    font-size: 16px;
+}
+
+#gfg1 {
+  margin: 10px;
+  padding: 5px 5px;
+  font-size: 16px;
+}
+
+.gfg2 {
+background-image: url(../images/cherry-blossoms.png);
+}

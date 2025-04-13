@@ -5,10 +5,22 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link href="css/sitewide.css" rel="stylesheet">
 <link href="css/fonts.css" rel="stylesheet">
+<link href="css/DarkLight.css" rel="stylesheet">
+<script src="java/DarkLight.js" defer></script>
     <title>Welcome to my Homepage</title>
     </head>
-    <body>
-        <main>
+        <body class="light-mode">
+                <div class="header">
+                    <button id="toggleButton">Toggle Light/Dark Mode</button>
+            <select id="gfg1">
+                <option value="8px">8px</option>
+                <option value="10px">10px</option>
+                <option value="14px">14px</option>
+                <option value="20px">20px</option>
+                <option value="24px">24px</option>
+            </select>
+                </div>
+<main>
     <nav>
         <ul>
         <li><a href="#">Home</a></li> 
@@ -34,21 +46,24 @@
         </ul></li> 
         </ul>
     </nav>
-    <div class="box">
+
+    <div id="gfg">
         <h1 id="double-shadow">Hello Strangers! Welcome to my Website <img src="images/star.png" width="100" height="70" title="star">
         </h1>
         <h3 id="simple-shadow">My name is Christopher Baribault</h3>
-        </div>
-            <ul>
-              <li><a href="#featured">Click for moving image</a></li>
-            </ul>
-    <section id="featured">
-        <h2><img alt="Tiny Runner" src="images/skate.png"></h2>
+   </div>
         
        
-</section>
 
+<script>
+    const selectFontSize = document.getElementById("gfg1");
+    const updateElement = document.getElementById("gfg");
 
+    selectFontSize.addEventListener("change", function () {
+        const selectedValue = selectFontSize.value;
+        updateElement.style.fontSize = selectedValue;
+    });
+</script>
 
     
     </main>
@@ -69,6 +84,5 @@
             <img src="images/icons/twitter-icon.png" alt="Twitter Icon">
            </a>
           </footer>
-          </body>
-    
+    </body>
 </html>
