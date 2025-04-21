@@ -6,9 +6,22 @@
 <link rel="stylesheet" href="css/sitewide.css">
 <link href="css/tables.css" rel="stylesheet">
 <link href="css/fonts.css" rel="stylesheet">
+<link rel="stylesheet" href="css/DarkLight.css">
+<script src="java/DarkLight.js" defer></script>
     <title>Welcome to my Portfolio</title>
 </head>
-<body>
+<body class="light-mode">
+    <div class="header">
+        <button id="toggleButton">Toggle Light/Dark Mode</button>
+<select id="gfg1">
+    <option value="8px">8px</option>
+    <option value="10px">10px</option>
+    <option value="14px">14px</option>
+    <option value="16px">16px</option>
+    <option value="20px">20px</option>
+    <option value="24px">24px</option>
+</select>
+    </div>
     <main>
       
         <nav>
@@ -36,13 +49,14 @@
                 </ul></li> 
                 </ul>
        </nav>
+       <div id="banner2">
        <h1 id="banner">Media Banner</h1>
         <h2>This image is a Social Media Banner</h2>
         <div class="wrapper">
             <div class="mediabanner">
         <img src="images/projects/social-media-2-exp.png" width="600" height="200" title="Banner">
                 </div>
-    <div id="div2" class="box">
+    <div class="box">
                  <h2>Notes</h2>
                     <ul>
                         <li>Made new file.</li>
@@ -56,6 +70,16 @@
                     </ul>
                 </div>
             </div>
+            </div>
+            <script>
+                const selectFontSize = document.getElementById("gfg1");
+                const updateElement = document.getElementById("banner2");
+            
+                selectFontSize.addEventListener("change", function () {
+                    const selectedValue = selectFontSize.value;
+                    updateElement.style.fontSize = selectedValue;
+                });
+            </script>
         </main>
         
     <p>Disclosure: This is not a real website.</p>

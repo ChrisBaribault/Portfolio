@@ -6,9 +6,22 @@
 <link rel="stylesheet" href="css/sitewide.css">
 <link href="css/tables.css" rel="stylesheet">
 <link rel="stylesheet" href="css/fonts.css">
+<link href="css/DarkLight.css" rel="stylesheet">
+<script src="java/DarkLight.js" defer></script>
     <title>Video Game</title>
 </head>
-<body>
+<body class="light-mode">
+  <div class="header">
+      <button id="toggleButton">Toggle Light/Dark Mode</button>
+<select id="gfg1">
+  <option value="8px">8px</option>
+  <option value="10px">10px</option>
+  <option value="14px">14px</option>
+  <option value="16px">16px</option>
+  <option value="20px">20px</option>
+  <option value="24px">24px</option>
+</select>
+  </div>
   <main>
   <nav>
       <ul>
@@ -37,7 +50,7 @@
     </nav>
     <h1 id="game">My Video Game Design</h1>
         <h2>Video game Opening</h2>
-        <div class="wrapper">
+        <div id="notes" class="wrapper">
           <div class="videogame">
         <video src="videos/finish.mp4" controls preload="auto" autoplay loop height="400" width="600"></video>
         </div>
@@ -63,6 +76,15 @@
               </ul>
             </div>
           </div>
+          <script>
+            const selectFontSize = document.getElementById("gfg1");
+            const updateElement = document.getElementById("notes");
+        
+            selectFontSize.addEventListener("change", function () {
+                const selectedValue = selectFontSize.value;
+                updateElement.style.fontSize = selectedValue;
+            });
+        </script>
           </main>
          <footer>
          <p>&copy; 2025 Portfolio (Chris Baribault). All rights reserved.</p>

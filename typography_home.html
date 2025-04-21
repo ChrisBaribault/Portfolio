@@ -4,9 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/sitewide.css" rel="stylesheet">
+    <link href="css/DarkLight.css" rel="stylesheet">
+<script src="java/DarkLight.js" defer></script>
     <title>Welcome to Typography</title>
 </head>
-<body>
+<body class="light-mode">
+    <div class="header">
+        <button id="toggleButton">Toggle Light/Dark Mode</button>
+<select id="gfg1">
+    <option value="8px">8px</option>
+    <option value="10px">10px</option>
+    <option value="14px">14px</option>
+    <option value="16px">16px</option>
+    <option value="20px">20px</option>
+    <option value="24px">24px</option>
+</select>
+    </div>
     <main>
     <nav>
         <ul>
@@ -34,7 +47,17 @@
             </ul>
    </nav>
     <p><img src="images/typo-pics/welcome_to_typo.jpg" alt="Welcome" height="400" width="600">
-    </p></main>
+    </p>
+    <script>
+        const selectFontSize = document.getElementById("gfg1");
+        const updateElement = document.getElementById("gfg");
+    
+        selectFontSize.addEventListener("change", function () {
+            const selectedValue = selectFontSize.value;
+            updateElement.style.fontSize = selectedValue;
+        });
+    </script>
+</main>
     
          <hr>
          <footer>

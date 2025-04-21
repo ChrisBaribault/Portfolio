@@ -6,9 +6,22 @@
     <link rel="stylesheet" href="css/sitewide.css">
     <link href="css/definition-text.css" rel="stylesheet">
     <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/DarkLight.css">
+    <script src="java/DarkLight.js" defer></script>
     <title>Typography Overview</title>
 </head>
-<body>
+<body class="light-mode">
+    <div class="header">
+        <button id="toggleButton">Toggle Light/Dark Mode</button>
+<select id="gfg1">
+    <option value="8px">8px</option>
+    <option value="10px">10px</option>
+    <option value="14px">14px</option>
+    <option value="16px">16px</option>
+    <option value="20px">20px</option>
+    <option value="24px">24px</option>
+</select>
+    </div>
 <main>
     <nav>
         <ul>
@@ -36,6 +49,7 @@
             </ul>
    </nav>
    <h1 id="double-shadow">Typography Overview</h1>
+   <div id="notes">
    <div id="what-is" class="box">
    <h2>What is Typography?</h2>
   <p>It is the style and appearance of the text. Its a process of giving your text a visual look or appearance.
@@ -109,7 +123,16 @@
         <h2>Monospaced</h2>
         <p> A typeface where each character is the same width (for example, Courier New). Monospaced typefaces are used when uniform spacing is useful, like programming and tables.</p>
     </section> 
-
+    </div>
+    <script>
+        const selectFontSize = document.getElementById("gfg1");
+        const updateElement = document.getElementById("banner2");
+    
+        selectFontSize.addEventListener("change", function () {
+            const selectedValue = selectFontSize.value;
+            updateElement.style.fontSize = selectedValue;
+        });
+    </script>
         </main>
          <footer>
             <p>Disclosure: This is not a real website.</p>

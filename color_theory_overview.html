@@ -6,9 +6,22 @@
     <link href="css/sitewide.css" rel="stylesheet">
     <link href="css/definition-text.css" rel="stylesheet">
     <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/DarkLight.css">
+    <script src="java/DarkLight.js" defer></script>
     <title>Color Theory Definition</title>
 </head>
-  <body>
+<body class="light-mode">
+    <div class="header">
+        <button id="toggleButton">Toggle Light/Dark Mode</button>
+<select id="gfg1">
+    <option value="8px">8px</option>
+    <option value="10px">10px</option>
+    <option value="14px">14px</option>
+    <option value="16px">16px</option>
+    <option value="20px">20px</option>
+    <option value="24px">24px</option>
+</select>
+    </div>
     <main>
         
     <nav>
@@ -36,6 +49,7 @@
             </ul></li> 
             </ul>
    </nav>
+   <div id="all">
    <h1 id="double-shadow">Color Theory Definition</h1>
     <div id="what-is" class="box">
       <h2>What is Color Theory?</h2>
@@ -173,6 +187,17 @@
             <h2>Color</h2>
             <p>The property possessed by an object of producing different sensations on the eye as a result of the way the object reflects or emits light.</p>
         </section>
+        </div>
+        <script>
+            const selectFontSize = document.getElementById("gfg1");
+            const updateElement = document.getElementById("all");
+            
+        
+            selectFontSize.addEventListener("change", function () {
+                const selectedValue = selectFontSize.value;
+                updateElement.style.fontSize = selectedValue;
+            });
+        </script>
 
       </main>
          <hr>

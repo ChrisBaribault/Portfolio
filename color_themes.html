@@ -6,9 +6,22 @@
     <link rel="stylesheet" href="css/sitewide.css">
     <link href="css/tables.css" rel="stylesheet">
     <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/DarkLight.css">
+    <script src="java/DarkLight.js" defer></script>
     <title>Color Themes</title>
     </head>
-<body>
+    <body class="light-mode">
+      <div class="header">
+          <button id="toggleButton">Toggle Light/Dark Mode</button>
+  <select id="gfg1">
+      <option value="8px">8px</option>
+      <option value="10px">10px</option>
+      <option value="14px">14px</option>
+      <option value="16px">16px</option>
+      <option value="20px">20px</option>
+      <option value="24px">24px</option>
+  </select>
+      </div>
   <main>
   <nav>
     <ul>
@@ -37,7 +50,7 @@
 </nav>
 <h1 id="double-shadow">Color Themes</h1>
       <br>
-      <table>
+      <table id="box">
       <caption>Color Table</caption>
         <tr>
           <th id="name">Names</th>
@@ -64,6 +77,16 @@
           <td><img height="80" width="80" src="images/color-theory/triadic.jpg" title="Triadic"></td>
         </tr>
       </table>
+      <script>
+        const selectFontSize = document.getElementById("gfg1");
+        const updateElement = document.getElementById("box");
+        
+    
+        selectFontSize.addEventListener("change", function () {
+            const selectedValue = selectFontSize.value;
+            updateElement.style.fontSize = selectedValue;
+        });
+    </script>
       </main>
       
     <hr>

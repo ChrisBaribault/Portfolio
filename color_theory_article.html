@@ -6,9 +6,11 @@
 <link rel="stylesheet" href="css/sitewide.css">
 <link href="css/definition-text.css" rel="stylesheet">
 <link rel="stylesheet" href="css/fonts.css">
+<link rel="stylesheet" href="css/DarkLight.css">
+<script src="java/DarkLight.js" defer></script>
     <title>Color Theory Article</title>
 </head>
-<body>
+
   <main>
   <nav>
       <ul>
@@ -33,10 +35,24 @@
               <li><a href="font_type_article.html">Font Types</a></li>
               <li><a href="typo_article.html">Article</a></li>
           </ul></li> 
+          <li><div class="light-mode">
+            <div class="header">
+                <button id="toggleButton">Toggle Light/Dark Mode</button>
+          
+          <select id="gfg1">
+            <option value="8px">8px</option>
+            <option value="10px">10px</option>
+            <option value="14px">14px</option>
+            <option value="16px">16px</option>
+            <option value="20px">20px</option>
+            <option value="24px">24px</option>
+          </select>
+      
+            </div></div></li>
           </ul>
  </nav>
  <h1 id="double-shadow">Color Theory Article</h1>
- 
+      <div id="art">
       <p><img src="images/Table_color_article_finish.jpg" alt="Two Different Webpages" height="300" width="800" class="image-style"></p><br>
       <div class="box">
       <p>I’m going to give two examples of color theory. One that I feel works well and one that doesn’t.</p>
@@ -46,7 +62,17 @@
         In addition, the variety of colors in the background image makes it almost impossible to find a single contrasting color that makes the text easy to read. If the company was set on using this image on the homepage I would suggest using it as a banner or an image on the page with text around it. They could then use a complementary color scheme of a yellow background and blue/violet and red/violet for the text around the image.</p>
       <p>A good example of a well thought out color scheme is <a href="https://www.espn.com/nhl/team/_/name/nyr/new-york-rangers">ESPN</a>. The contrasting colors of the black font on the white background makes the text easier to read.</p>
       <p>Understanding that choosing the right color scheme can enhance a website, choosing the wrong color scheme can be detrimental and frustrating to a potential customer visit.</p>
-    </div>
+    </div></div>
+    <script>
+      const selectFontSize = document.getElementById("gfg1");
+      const updateElement = document.getElementById("art");
+      
+  
+      selectFontSize.addEventListener("change", function () {
+          const selectedValue = selectFontSize.value;
+          updateElement.style.fontSize = selectedValue;
+      });
+  </script>
   </main>
     
       <hr>

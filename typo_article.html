@@ -6,9 +6,22 @@
     <link rel="stylesheet" href="css/sitewide.css">
     <link href="css/definition-text.css" rel="stylesheet">
     <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/DarkLight.css">
+<script src="java/DarkLight.js" defer></script>
     <title>Typography Overview</title>
 </head>
-<body>
+<body class="light-mode">
+    <div class="header">
+        <button id="toggleButton">Toggle Light/Dark Mode</button>
+<select id="gfg1">
+    <option value="8px">8px</option>
+    <option value="10px">10px</option>
+    <option value="14px">14px</option>
+    <option value="16px">16px</option>
+    <option value="20px">20px</option>
+    <option value="24px">24px</option>
+</select>
+    </div>
     <main>
     <nav>
         <ul>
@@ -37,7 +50,7 @@
    </nav>
    <h1 id="double-shadow">Typography Article</h1>
     <img src="images/typo-pics/uk-ramen2.jpg" alt="two different webpages" height="300" width="1100" class="image-style">
-    <div class="box">
+    <div id="notes" class="box">
             <p>Typography is probably one of the last things people think about when making a website but it could be one of the most important things in how it portrays a business. Knowing your audience when selecting a font type, font size, ect is just as important as the color scheme and content. 
                 For example, a lot of people like the font comic sans. While there are sites where it could work, like a comic book store or comedy show, using it for a hospital or law firm probably wouldn’t give a person confidence to use them for help.</p>
                 
@@ -54,6 +67,15 @@
                 This means most people will take their time to read it carefully and know the information.
              </p>
              </div>
+             <script>
+                const selectFontSize = document.getElementById("gfg1");
+                const updateElement = document.getElementById("notes");
+            
+                selectFontSize.addEventListener("change", function () {
+                    const selectedValue = selectFontSize.value;
+                    updateElement.style.fontSize = selectedValue;
+                });
+            </script>
              </main>
     
          <footer>

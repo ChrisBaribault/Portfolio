@@ -1,7 +1,6 @@
 h2 {
     border-bottom: 2px solid #333;
     padding-bottom: 5px;
-    color: #333;
 }
 
 #what-is {
@@ -26,13 +25,11 @@ h2 {
 
 #term-links {
   margin: 1rem;
-  background: aliceblue;
   border: black solid 1px;
-  width: 200px;
+  width: 280px;
 }
 
 section {
-  background: white;
   border: 2px black;
   box-sizing: border-box;
   margin: 1rem;
@@ -108,11 +105,9 @@ article p:last-child::after {
 h2 {
   border-bottom: 2px solid #333;
   padding-bottom: 5px;
-  color: #333;
 }
 
 article {
-background: white;
 border: 2px black;
 box-sizing: border-box;
 margin: 1rem;

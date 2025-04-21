@@ -40,14 +40,11 @@
     background-image: url(../images/redball.png);
     background-size: cover;
     background-position: 40%;
-    color: black;
     outline: none;
     font-weight: bold;
   }
 
-  #div5 {
-    background-color: aliceblue;
-  }
+  
 
   caption {
     font-size: 1.5rem;

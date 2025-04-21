@@ -6,10 +6,22 @@
 <link rel="stylesheet" href="css/resume.css">
 <link rel="stylesheet" href="css/sitewide.css">
 <link rel="stylesheet" href="css/fonts.css">
-
+<link rel="stylesheet" href="css/DarkLight.css">
+<script src="java/DarkLight.js" defer></script>
     <title>Resume</title>
 </head>
-    <body>
+<body class="light-mode">
+    <div class="header">
+        <button id="toggleButton">Toggle Light/Dark Mode</button>
+<select id="gfg1">
+    <option value="8px">8px</option>
+    <option value="10px">10px</option>
+    <option value="14px">14px</option>
+    <option value="16px">16px</option>
+    <option value="20px">20px</option>
+    <option value="24px">24px</option>
+</select>
+    </div>
     <main>
         <nav>
             <ul>
@@ -36,6 +48,7 @@
                 </ul></li>
             </ul> 
         </nav>
+        <div id="resume">
         <h1 id="title">Resume</h1>
         <div class="container">
             <header>
@@ -90,9 +103,9 @@
                     <li>Valid Driver’s License</li>
                     <li>No vehicular moving violations</li> 
                     <li>Ability to lift over 75 pounds</li>
-                    <li>Worked in extreme</li> 
-                    <li>Temperatures both inside and out, prompt and attentive</li>
+                    <li>Worked in extreme temperatures both inside and out, prompt and attentive</li>
                    </ul>
+            </div>
             </div>
             <script>
                 var coll = document.getElementsByClassName("collapsible");
@@ -109,6 +122,15 @@
                  }
                  });
                     }
+            </script>
+            <script>
+                const selectFontSize = document.getElementById("gfg1");
+                const updateElement = document.getElementById("resume");
+            
+                selectFontSize.addEventListener("change", function () {
+                    const selectedValue = selectFontSize.value;
+                    updateElement.style.fontSize = selectedValue;
+                });
             </script>
             </main>
     
