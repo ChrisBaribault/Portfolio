@@ -3,9 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="css/sitewide.css" rel="stylesheet">
+    <link href="css/sitewide.cs" rel="stylesheet">
     <link href="css/DarkLight.css" rel="stylesheet">
-<script src="java/DarkLight.js" defer></script>
+    <script src="java/DarkLight.js" defer></script>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+    a:link {
+  text-decoration: none;
+}
+
+    a:visited {
+  text-decoration: none;
+}
+
+    a:hover {
+  text-decoration: none;
+}
+
+    a:active {
+  text-decoration: none;
+}
+
+</style>
     <title>Welcome to Typography</title>
 </head>
 <body class="light-mode">
@@ -21,33 +40,62 @@
 </select>
     </div>
     <main>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li> 
-            <li class="portfolio"><a href="homeport.html">Portfolio</a>
-                <ul>
-                    <li><a href="magazine.html">Magazine</a></li>
-                    <li><a href="mediabanner.html">Media Banner</a></li>
-                    <li><a href="videogame.html">Video Game</a></li>
-                    <li><a href="kickingball.html">Boy Kicking Ball</a></li>
-                </ul></li>
-            <li><a href="resume.html">Resume</a></li> 
-            <li class="color"><a href="color_theory_home.html">Color Theory</a>
-            <ul>
-                <li><a href="color_theory_overview.html">Color Theory Definition</a></li>
-                <li><a href="color_themes.html">Color Themes</a></li>
-                <li><a href="color_theory_article.html">Article</a></li>
-            </ul></li> 
-            <li class="typo"><a href="typography_home.html">Typography</a>
-            <ul>
-                <li><a href="typo_overview.html">Typography Overview</a></li>
-                <li><a href="font_type_article.html">Font Types</a></li>
-                <li><a href="typo_article.html">Article</a></li>
-            </ul></li> 
-            <li><a href="quiz.html">Mini Quiz</a></li>
-            </ul>
-   </nav>
-    <p><img src="images/typo-pics/welcome_to_typo.jpg" alt="Welcome" height="400" width="600">
+     <nav class="navbar navbar-expand-lg" style="background-color: lightblue;">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Portfolio
+                        </a>
+                        <ul class="dropdown-menu">
+                             <li><a class="dropdown-item" href="homeport.html">Welcome</a></li>
+                            <li><a class="dropdown-item" href="magazine.html">Magazine</a></li>
+                            <li><a class="dropdown-item" href="mediabanner.html">Media Banner</a></li>
+                            <li><a class="dropdown-item" href="videogame.html">Video Game</a></li>
+                            <li><a class="dropdown-item" href="kickingball.html">Boy Kicking Ball</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="resume.html">Resume</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Color Theory
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="color_theory_home.html">Welcome</a></li>
+                            <li><a class="dropdown-item" href="color_theory_overview.html">Definition</a></li>
+                            <li><a class="dropdown-item" href="color_themes.html">Color Themes</a></li>
+                            <li><a class="dropdown-item" href="color_theory_article.html">Article</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Typography
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="typography_home.html">Welcome</a></li>
+                            <li><a class="dropdown-item" href="typo_overview.html">Overview</a></li>
+                            <li><a class="dropdown-item" href="font_type_article.html">Font types</a></li>
+                            <li><a class="dropdown-item" href="typo_article.html">Article</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="quiz.html">Quiz</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <p><img src="images/typo-pics/welcome_to_typo.jpg" class="py-4 mx-auto d-block" alt="Welcome" height="400" width="600">
     </p>
     <script>
         const selectFontSize = document.getElementById("gfg1");
@@ -60,8 +108,8 @@
     </script>
 </main>
     
-         <hr>
-         <footer>
+         
+         <footer class="py-3 m-2 border-top border-dark border-2">
             <p>Disclosure: This is not a real website.</p>
          <p>&copy; 2025 Portfolio (Chris Baribault). All rights reserved.</p>
            <a href="https://mail.yahoo.com/">
@@ -77,5 +125,7 @@
             <img src="images/icons/twitter-icon.png" alt="Twitter Icon">
            </a>
           </footer>
+          <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js" integrity="sha384-7qAoOXltbVP82dhxHAUje59V5r2YsVfBafyUDxEdApLPmcdhBPg1DKg1ERo0BZlK" crossorigin="anonymous"></script>
 </body>
 </html>

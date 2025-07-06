@@ -28,12 +28,7 @@
     src: url('../fonts/fantasy_magist/FANTASY\ MAGIST.otf');
 }
 
-#double-shadow {
- /*   color: black; 
-    text-shadow: .1rem .1rem white, 
-    .2rem .2rem lightblue; */
-    border: #cce;
-}
+
 
 #simple-shadow {
   /*  color: black; */
@@ -42,6 +37,7 @@
 
 #double-shadow {
     font-family: 'sevenmoons';
+    font-size: 3.5rem;
  /*   letter-spacing: 0.2rem;
     word-spacing: 0.2rem;
     font-size: 3rem; */
