@@ -3,11 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="css/resume.css">
+<link rel="stylesheet" href="css/resume.cs">
 <link rel="stylesheet" href="css/sitewide.cs">
 <link rel="stylesheet" href="css/fonts.css">
 <link rel="stylesheet" href="css/DarkLight.css">
 <script src="java/DarkLight.js" defer></script>
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
 <style>
     a:link {
   text-decoration: none;
@@ -25,6 +26,26 @@
   text-decoration: none;
 }
 
+a:hover, .dropdown a:hover {
+    background-color: rgb(110, 208, 241);
+}
+
+.container {
+    width: 70%;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.content {
+    display: none;
+    overflow: hidden;
+}
+
+.collapsible {
+    cursor: pointer;
+    border: none;
+    outline: none;
+  }
+
 </style>
     <title>Resume</title>
 </head>
@@ -40,92 +61,131 @@
     <option value="24px">24px</option>
 </select>
     </div>
-    <main>
-        <nav>
-            <ul>
-            <li><a href="index.html">Home</a><li></li> 
-            <li class="portfolio"><a href="homeport.html">Portfolio</a>
-                <ul>
-                    <li><a href="magazine.html">Magazine</a></li>
-                    <li><a href="mediabanner.html">Media Banner</a></li>
-                    <li><a href="videogame.html">Video Game</a></li>
-                    <li><a href="kickingball.html">Boy Kicking Ball</a></li>
-                </ul></li> 
-            <li><a href="#">Resume</a></li> 
-            <li class="color"><a href="color_theory_home.html">Color Theory</a>
-                <ul>
-                    <li><a href="color_theory_overview.html">Color Theory Definition</a></li>
-                    <li><a href="color_themes.html">Color Themes</a></li>
-                    <li><a href="color_theory_article.html">Article</a></li>
-            </ul></li> 
-            <li class="typo"><a href="typography_home.html">Typography</a>
-                <ul>
-                    <li><a href="typo_overview.html">Typography Overview</a></li>
-                    <li><a href="font_type_article.html">Font Types</a></li>
-                    <li><a href="typo_article.html">Article</a></li>
-                </ul></li>
-                <li><a href="quiz.html">Mini Quiz</a></li>
-            </ul> 
-        </nav>
-        <div id="resume">
-        <h1 id="title">Resume</h1>
-        <div class="container">
-            <header>
-            <h2>Contact Information</h2>
-                <p>Email: Chris_Baribault@yahoo.com</p>
-                <p>Phone: (210) 248-4120</p>
-                <p>Address: 9443 Skywalker Ranch 78051</p>
-            </header>
+        <nav class="navbar navbar-expand-lg" style="background-color: lightblue;">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Portfolio
+                        </a>
+                        <ul class="dropdown-menu">
+                             <li><a class="dropdown-item" href="homeport.html">Welcome</a></li>
+                            <li><a class="dropdown-item" href="magazine.html">Magazine</a></li>
+                            <li><a class="dropdown-item" href="mediabanner.html">Media Banner</a></li>
+                            <li><a class="dropdown-item" href="videogame.html">Video Game</a></li>
+                            <li><a class="dropdown-item" href="kickingball.html">Boy Kicking Ball</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="resume.html">Resume</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Color Theory
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="color_theory_home.html">Welcome</a></li>
+                            <li><a class="dropdown-item" href="color_theory_overview.html">Definition</a></li>
+                            <li><a class="dropdown-item" href="color_themes.html">Color Themes</a></li>
+                            <li><a class="dropdown-item" href="color_theory_article.html">Article</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Typography
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="typography_home.html">Welcome</a></li>
+                            <li><a class="dropdown-item" href="typo_overview.html">Overview</a></li>
+                            <li><a class="dropdown-item" href="font_type_article.html">Font types</a></li>
+                            <li><a class="dropdown-item" href="typo_article.html">Article</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="quiz.html">Quiz</a>
+                    </li>
+                </ul>
             </div>
-        <button type="button" class="collapsible">Professional Summary</button>
-        <div class="content">
-            <p>Certified HVAC-R Technician with 3 months of intensive lab hands-on training at National Technical Institute 
+        </div>
+    </nav>
+        <main>
+        <h1 id="title" class="text-center py-3">Resume</h1>
+        <section id="resume" class="">
+        <div class="container p-3" style="background-color: lightblue;">
+            <div class="col-md-12">
+            <h1 class="text-center">Christopher Baribault</h1>
+            <h5 class="text-center p-2">Web Developer</h5>
+            <p class="border-top border-dark border-2 px-5 pt-3">New to Web Developing trying tp gain experience in the field.
+                I have experience with Photoshop, Animate, Word, Visual Studio Code, and Video Editors.</p>
+            </div>
+            </div>
+             <div class="container text-white" style="background-color: rgb(86, 93, 98);">
+                <div class="row p-2">
+                    <div class="col-md pt-3">
+                        <p>Email: Chris_Baribault@yahoo.com</p>
+                    </div>
+                    <div class="col-md text-md-center pt-3">
+                        <p>Phone: (210) 248-4120</p>
+                    </div>
+                    <div class="col-md text-md-end pt-3">
+                        <p>Address: 9443 Skywalker Ranch 78051</p>
+                    </div>
+                </div>
+            </div>
+            <div id="body" class="container">
+                <div class="row">
+                    <div class="col-md p-5 pb-0">
+                        <button type="button" class="collapsible text-center fs-5 p-3" style="background-color: lightblue; width: 100%;">Professional Summary</button>
+                        <div class="content p-3" style="background-color: #f1f1f1;">
+                             <p>Certified HVAC-R Technician with 3 months of intensive lab hands-on training at National Technical Institute 
                 seeking position as a HVAC./R Technician with opportunities for further training and development. Seeking 
                 opportunity in residential and/or commercial sectors where I can utilize my newly gained knowledge in 
                 installation, service, and maintenance.  Committed to safety and high performance, thrives in a fast paced, 
                 challenging environment..</p>
-        </div>
-
-        <button type="button" class="collapsible">Work Experience</button>
-        <div class="content">
-                <h3>Head cook - Whataburger</h3>
-                <p>Jun 2018 - Nov 2020</p>
-                <ul>
-                    <li>Over saw food perpetration and production safety procedures were followed during COVID-19</li>  
-                    <li>Trained and guided 5 other line cooks, improving overall performance, service quality and productivity</li>
-                </ul>
-            
-
-                <h3>CUSTODIAL ASSISTANT - SEAWORLD</h3>
+                        </div>
+                    </div>
+                    <div class="col-md p-5 pb-0">
+                        <button type="button" class="collapsible text-center fs-5 p-3" style="background-color: lightblue; width: 100%;">Work Experience</button>
+                        <div class="content p-3" style="background-color: #f1f1f1;">
+                        <h3>Head cook - Whataburger</h3>
+                         <p>Jun 2018 - Nov 2020</p>
+                        <ul>
+                            <li>Over saw food perpetration and production safety procedures were followed during COVID-19</li>  
+                            <li>Trained and guided 5 other line cooks, improving overall performance, service quality and productivity</li>
+                        </ul>
+                             <h3>CUSTODIAL ASSISTANT - SEAWORLD</h3>
                 <p>MAY	2016 - SEP	2017</p>
-                <ul>
-                    <li>Performed basic repair duties, responsible for park cleanliness, managed and maintained storage facility</li>
-                    <li>Conducted periodical inspections of equipment to ensure it met safety and functionality standards</li>  
-                    <li>Maintained facilities and grounds safe and in compliance of state, county, city and federal standards</li>
-                </ul>
-        </div>
+                        <ul>
+                            <li>Performed basic repair duties, responsible for park cleanliness, managed and maintained storage facility</li>
+                            <li>Conducted periodical inspections of equipment to ensure it met safety and functionality standards</li>  
+                            <li>Maintained facilities and grounds safe and in compliance of state, county, city and federal standards</li>
+                        </ul>
+                    </div>
+                    </div>
 
-            <button type="button" class="collapsible">Education</button>
-            <div class="content">
-                <h3>HVAC-R Certification - National Technical Institute</h3>
-                <p>December 2019 - March 2020</p>
-                <ul>
-                    <li>Understanding of the Refrigeration and Heat Pump Cycle</li> 
-                    <li>Recovering and Recycling Refrigerant</li> 
-                    <li>Calculate Super heat and Subcooling</li>
-                </ul>
+                    <div class="row">
+                        <div class="col-md p-5">
+                            <button type="button" class="collapsible text-center fs-5 p-3" style="background-color: lightblue; width: 100%;">Education</button>
+            <div class="content p-3" style="background-color: #f1f1f1;">
+                <h3 class="text-center">HVAC-R Certification - National Technical Institute</h3>
+                <h5 class="text-center">December 2019 - March 2020</h5>
+                    <p class="text-center">Understanding of the Refrigeration and Heat Pump Cycle</p>
+                    <p class="text-center">Recovering and Recycling Refrigerant</p>
+                    <p class="text-center">Calculate Super heat and Subcooling</p>
             </div>
 
-                <button type="button" class="collapsible">Skills</button>
-                <div class="content">
-                   <ul>
-                    <li>Valid Driver’s License</li>
-                    <li>No vehicular moving violations</li> 
-                    <li>Ability to lift over 75 pounds</li>
-                    <li>Worked in extreme temperatures both inside and out, prompt and attentive</li>
-                   </ul>
+                        </div>
+                    </div>
             </div>
             </div>
+            </section>
             <script>
                 var coll = document.getElementsByClassName("collapsible");
                 var i;
@@ -170,5 +230,7 @@
             <img src="images/icons/twitter-icon.png" alt="Twitter Icon">
            </a>
           </footer>
+          <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js" integrity="sha384-7qAoOXltbVP82dhxHAUje59V5r2YsVfBafyUDxEdApLPmcdhBPg1DKg1ERo0BZlK" crossorigin="anonymous"></script>
         </body>
 </html>

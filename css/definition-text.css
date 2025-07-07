@@ -15,6 +15,11 @@ h2 {
   max-width: 80%;
 }
 
+section:target {
+  box-shadow: 0 0 1.5rem blue;
+  background-color: lightblue;
+}
+
 /* CSS for images */
 .image-style {
   display: block;
