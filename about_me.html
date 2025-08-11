@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="css/sitewide.cs" rel="stylesheet">
+<link href="css/fonts.css" rel="stylesheet">
+<link href="css/DarkLight.css" rel="stylesheet">
+<script src="java/DarkLight.js" defer></script>
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+ <style>
+        a:link {
+        text-decoration: none;
+        }
+
+         a:visited {
+        text-decoration: none;
+        }
+
+        a:hover {
+        text-decoration: none;
+        }
+
+        a:active {
+        text-decoration: none;
+        }
+
+        a:hover, .dropdown a:hover {
+        background-color: rgb(110, 208, 241);
+        }
+
+        .container {
+        width: 70%;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .content {
+        display: none;
+        overflow: hidden;
+        }
+
+        .collapsible {
+        cursor: pointer;
+        border: none;
+        outline: none;
+         }
+
+
+        /* Custom CSS to ensure the image fills the container and looks good */
+        .carousel-item img {
+            width: 100%;
+            height: 500px;
+            object-fit: cover;
+            border-radius: 0.75rem; /* Rounded corners for the images */
+        }
+        .carousel {
+            max-width: 900px; /* Limit the max width of the carousel */
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .carousel-caption h5, .carousel-caption p {
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for text */
+            padding: 0.5rem;
+            border-radius: 0.5rem;
+        }
+
+    </style>
+    <title>About me</title>
+    </head>
+        <body class="light-mode">
+                <div class="header">
+                    <button id="toggleButton">Toggle Light/Dark Mode</button>
+            <select id="gfg1">
+                <option value="8px">8px</option>
+                <option value="10px">10px</option>
+                <option value="14px">14px</option>
+                <option value="16px">16px</option>
+                <option value="20px">20px</option>
+                <option value="24px">24px</option>
+            </select>
+                </div>
+<main>
+    <nav class="navbar navbar-expand-lg" style="background-color: lightblue;">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Portfolio
+                        </a>
+                        <ul class="dropdown-menu">
+                             <li><a class="dropdown-item" href="homeport.html">Welcome</a></li>
+                            <li><a class="dropdown-item" href="magazine.html">Magazine</a></li>
+                            <li><a class="dropdown-item" href="mediabanner.html">Media Banner</a></li>
+                            <li><a class="dropdown-item" href="videogame.html">Video Game</a></li>
+                            <li><a class="dropdown-item" href="kickingball.html">Boy Kicking Ball</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="resume.html">Resume</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Color Theory
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="color_theory_home.html">Welcome</a></li>
+                            <li><a class="dropdown-item" href="color_theory_overview.html">Definition</a></li>
+                            <li><a class="dropdown-item" href="color_themes.html">Color Themes</a></li>
+                            <li><a class="dropdown-item" href="color_theory_article.html">Article</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Typography
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="typography_home.html">Welcome</a></li>
+                            <li><a class="dropdown-item" href="typo_overview.html">Overview</a></li>
+                            <li><a class="dropdown-item" href="font_type_article.html">Font types</a></li>
+                            <li><a class="dropdown-item" href="typo_article.html">Article</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="quiz.html">Quiz</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="about_me.html">About me</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    
+        
+       
+
+
+
+
+    <!-- Main Page Title -->
+    <h1 class="my-3 text-center">About Me</h1>
+
+    <!-- Bootstrap Carousel with Custom Styling -->
+    <div id="carouselExampleCaptions" class="carousel slide w-full rounded-xl shadow-lg my-3" data-bs-ride="carousel">
+        
+        <!-- Carousel Indicators (the little dots at the bottom) -->
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        
+        <!-- Carousel Inner Container -->
+        <div class="carousel-inner rounded-xl">
+            <!-- Slide 1 -->
+            <div class="carousel-item active">
+                <img id="magazine" src="./images/projects/MagazineCoverexp_sm.png" class="d-block" alt="First slide">
+                <div class="carousel-caption d-none d-md-block">
+                   <h5 class="text-xl">Magazine Cover</h5>
+                </div>
+            </div>
+            
+            <!-- Slide 2 -->
+            <div class="carousel-item">
+                <img id="restore" src="./images/projects/Restore-with-color-exp.png" class="d-block" alt="Second slide">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5 class="text-xl">Restore Image</h5>
+                </div>
+            </div>
+            
+            <!-- Slide 3 -->
+            <div class="carousel-item">
+                <img id="social" src="./images/projects/social-media-2-exp.png" class="d-block" alt="Third slide">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5 class="text-xl">Social Media Banner</h5>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Previous Button -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        
+        <!-- Next Button -->
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+   <div class="row g-0 mx-5 mt-5">
+  <div class="col text-center ">
+    <div class="card border border-4 border-info">
+      <div class="card-body"><h3>Magazine Cover</h3><a data-bs-toggle="collapse" href="#notes-content0">
+  Click here for notes
+</a><div class="collapse" id="notes-content0">
+  <div class="card card-body mt-2 text-start">
+    <ul>
+        <li>Found a picture of an Asian woman on google with traditional attire.</li>
+        <li>Next I copied and saved it in my file.</li>
+        <li>Then I clicked generate image to give me some other options and images that will fit.</li>
+        <li>Then I selected the object selection tool, next subject select.</li>
+        <li>Then I created a blank select and mask.</li>
+        <li>Once I did that I found an image for a background on google to put behind the image.</li>
+        <li>I used the crop tool to make sure it fit in nice and neat.</li>
+        <li>Now I’m gonna use the text tool to give some words to the magazine.</li>
+    </ul>
+    </div>
+    </div>
+    </div>      
+    </div>
+    </div>
+
+  <div class="col text-center mx-3">
+    <div class="card border border-4 border-info">
+      <div class="card-body"><h3>Restore Image</h3><a data-bs-toggle="collapse" href="#notes-content1">
+  Click here for notes
+</a><div class="collapse" id="notes-content1">
+  <div class="card card-body mt-2 text-start">
+    <ul>
+        <li>Pick an image, you can find some on google or wikipedia.</li>
+        <li>Save and download the image to photoshop</li>
+        <li>Find any spots you might think need restoring</li>
+        <li>Use the Quick Selection Tool: This tool (shortcut W) lets you "paint" over the subject to select it. It's great for subjects with a decent amount of contrast against the background.</li>
+        <li>Next use Spot Healing Brush Tool (J): This is your go-to for removing small blemishes, dust spots, and minor scratches.</li>
+        <li>Select and Mask: With your selection active, click the Select and Mask button in the options bar at the top. This will open a new workspace where you can use the Refine Edge</li>
+        <li>Then remove the original background</li>
+        <li>Create a Layer Mask: The safest and most common way to do this is with a Layer Mask. With your selection active, click the Add layer mask button (a rectangle with a circle inside) at the bottom of the Layers panel. This will hide the background, but not permanently delete it, allowing for easy edits later.</li>
+        <li>Add a new background</li>
+        <li>Place the Background: Drag your new background image into your Photoshop document.</li>
+        <li>Arrange Layers: In the Layers panel, drag the new background layer below the layer with your subject. This will place the subject on top of the new background.</li>
+        <li>Lastly, Resize and Adjust: Use the Move Tool (shortcut V) and Free Transform (Ctrl+T or Cmd+T) to resize, position, and rotate the new background until it looks right. You can also use adjustment layers to match the lighting and color of the new background to the subject.</li>
+    </ul>
+
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+
+  <div class="col text-center mx-3">
+    <div class="card border border-4 border-info">
+      <div class="card-body"><h3>Social Media Banner</h3><a data-bs-toggle="collapse" href="#notes-content2">
+  Click here for notes
+</a><div class="collapse" id="notes-content2">
+  <div class="card card-body mt-2 text-start">
+    <ul>
+      <li>Made new file.</li>
+        <li>Made circles with different colors and overlapped each other</li>
+        <li>Then I exported a picture from google.</li>
+        <li>Next right clip and create a clipping mask.</li>
+        <li>Then I changed the fill to 65 percent.</li>
+        <li>I use the polygon tool and give it 6 points.</li>
+        <li>I duplicate it and put the blue in the back and white in front.</li>
+        <li>Next layer style, drop shadow.</li>
+    </ul>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    
+
+<script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+        content.style.display = "none";
+        } else {
+    content.style.display = "block";
+        }
+            });
+        }
+    </script>
+
+
+    <script>
+    const selectFontSize = document.getElementById("gfg1");
+    const updateElement = document.getElementById("gfg");
+
+    selectFontSize.addEventListener("change", function () {
+        const selectedValue = selectFontSize.value;
+        updateElement.style.fontSize = selectedValue;
+    });
+</script>
+</main>
+
+    <!-- Bootstrap JS Bundle (includes Popper) -->
+    
+    <footer class="py-3 m-2 border-top border-dark border-2">
+      <p>Disclosure: This is not a real website.</p>
+    <p>&copy; 2025 Portfolio (Chris Baribault). All rights reserved.</p>
+      <a href="https://mail.yahoo.com/">
+       <img width="30" height="30" src="images/icons/yahoo2.png" alt="Yahoo icon">
+      </a>
+      <a href="https://www.facebook.com/">
+       <img src="images/icons/facebook-icon.png" alt="Facebook icon">
+      </a>
+      <a href="https://www.linkedin.com/">
+       <img src="images/icons/linkedin-icon.png" alt="linkedin Icon">
+      </a>
+      <a href="https://twitter.com/webucator">
+       <img src="images/icons/twitter-icon.png" alt="Twitter Icon">
+      </a>
+     </footer>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js" integrity="sha384-7qAoOXltbVP82dhxHAUje59V5r2YsVfBafyUDxEdApLPmcdhBPg1DKg1ERo0BZlK" crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
