@@ -56,7 +56,7 @@
     font-size: 4rem;
 }
 
-#kickball {
+#kickball, #aboutme, #notes {
     font-family: 'milky';
     letter-spacing: 0.2rem;
     word-spacing: 0.2rem;

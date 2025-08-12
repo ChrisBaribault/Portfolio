@@ -46,7 +46,6 @@
          }
 
 
-        /* Custom CSS to ensure the image fills the container and looks good */
         .carousel-item img {
             width: 100%;
             height: 500px;
@@ -63,6 +62,10 @@
             background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for text */
             padding: 0.5rem;
             border-radius: 0.5rem;
+        }
+
+        .resume-container {
+      background-color: white;
         }
 
     </style>
@@ -148,7 +151,7 @@
 
 
     <!-- Main Page Title -->
-    <h1 class="my-3 text-center">About Me</h1>
+    <h1 id="aboutme" class="mt-3 text-center">About Me</h1>
 
     <!-- Bootstrap Carousel with Custom Styling -->
     <div id="carouselExampleCaptions" class="carousel slide w-full rounded-xl shadow-lg my-3" data-bs-ride="carousel">
@@ -162,9 +165,10 @@
         
         <!-- Carousel Inner Container -->
         <div class="carousel-inner rounded-xl">
+
             <!-- Slide 1 -->
             <div class="carousel-item active">
-                <img id="magazine" src="./images/projects/MagazineCoverexp_sm.png" class="d-block" alt="First slide">
+                <img id="magazine" src="images/projects/MagazineCoverexp_sm.png" class="d-block " style="object-fit: cover;" alt="First slide">
                 <div class="carousel-caption d-none d-md-block">
                    <h5 class="text-xl">Magazine Cover</h5>
                 </div>
@@ -200,9 +204,11 @@
         </button>
     </div>
 
+    <h2 id="notes" class="text-center mt-5 text-decoration-underline">Notes</h2>
+
    <div class="row g-0 mx-5 mt-5">
   <div class="col text-center ">
-    <div class="card border border-4 border-info">
+    <div class="card border border-2 border-info">
       <div class="card-body"><h3>Magazine Cover</h3><a data-bs-toggle="collapse" href="#notes-content0">
   Click here for notes
 </a><div class="collapse" id="notes-content0">
@@ -224,7 +230,7 @@
     </div>
 
   <div class="col text-center mx-3">
-    <div class="card border border-4 border-info">
+    <div class="card border border-2 border-info">
       <div class="card-body"><h3>Restore Image</h3><a data-bs-toggle="collapse" href="#notes-content1">
   Click here for notes
 </a><div class="collapse" id="notes-content1">
@@ -251,7 +257,7 @@
     </div>
 
   <div class="col text-center mx-3">
-    <div class="card border border-4 border-info">
+    <div class="card border border-2 border-info">
       <div class="card-body"><h3>Social Media Banner</h3><a data-bs-toggle="collapse" href="#notes-content2">
   Click here for notes
 </a><div class="collapse" id="notes-content2">
@@ -272,6 +278,106 @@
     </div>
     </div>
     </div>
+
+    <!-- Main container for the entire resume -->
+  <div class="container my-5">
+
+    <!-- The inner div with a border and shadow -->
+    <div class="resume-container p-4 p-md-5">
+
+    <div class="row text-center mb-4 pb-2 border-bottom">
+        <div class="col">
+          <h1 class="display-4 fw-bold">Christopher Baribault</h1>
+          <p class="mb-0">
+            <a href="mailto:myemail@example.com" class="text-decoration-none">myemail@example.com</a>
+            <span class="mx-2">|</span>
+            <a href="tel:+1234567890" class="text-decoration-none">+1 (234) 567-890</a>
+            <span class="mx-2">|</span>
+            <a href="#" class="text-decoration-none">LinkedIn</a>
+          </p>
+        </div>
+      </div>
+      <div class="row mt-4">
+        <div class="col-12">
+          <h2 class="h5 text-uppercase fw-bold mt-4 text-decoration-underline">Professional Summary</h2>
+          <p class="mb-0">
+           I designed and built a fully responsive website for my class, which utilized HTML5, CSS3, and JavaScript, with Bootstrap for the front-end framework. 
+          </p>
+        </div>
+      </div>
+
+      <!-- ==================== WORK EXPERIENCE SECTION ==================== -->
+      <div class="row mt-4">
+        <div class="col-12">
+          <h2 class="h5 text-uppercase fw-bold my-4 text-decoration-underline">Work Experience</h2>
+          
+          <div class="mb-4">
+            <div class="d-flex justify-content-between align-items-baseline">
+              <h5 class="fw-bold mb-2">Head Cook</h5>
+              <span class="text-muted small">Jun 2018 - Nov 2020</span>
+            </div>
+            <p class="mb-1"><strong>Whataburger,</strong> San Antonio, Texas</p>
+            <ul>
+                <li>Over saw food perpetration and production safety procedures were followed during COVID-19.</li>  
+                <li>Trained and guided 5 other line cooks, improving overall performance, service quality and productivity.</li>
+            </ul>
+          </div>
+
+          <div class="mb-4">
+            <div class="d-flex justify-content-between align-items-baseline">
+              <h5 class="fw-bold mb-2">Custodial Assistant</h5>
+              <span class="text-muted small">May 2016 - Sep	2017</span>
+            </div>
+            <p class="mb-1"><strong>Sea World,</strong> San Antonio, Texas</p>
+            <ul>
+                <li>Performed basic repair duties, responsible for park cleanliness, managed and maintained storage facility.</li>
+                <li>Conducted periodical inspections of equipment to ensure it met safety and functionality standards.</li>  
+                <li>Maintained facilities and grounds safe and in compliance of state, county, city and federal standards.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- ==================== EDUCATION SECTION ==================== -->
+      <div class="row mt-4">
+        <div class="col-12">
+          <h2 class="h5 text-uppercase fw-bold mb-2 text-decoration-underline mb-3">Education</h2>
+          <div class="d-flex justify-content-between align-items-baseline">
+            <h5 class="fw-bold mb-0">UTSA</h5>
+            <span class="text-muted small">2024 - 2025</span>
+          </div>
+          <p class="mb-1"><strong>Web Design</strong></p>
+        </div>
+      </div>
+
+      <!-- ==================== SKILLS SECTION ==================== -->
+      <div class="row mt-4">
+        <div class="col-12">
+          <h2 class="h5 text-uppercase fw-bold text-decoration-underline">Skills</h2>
+          <div class="d-flex flex-wrap">
+            <span class="badge text-bg-info fs-6 me-2 mb-2 text-light">HTML5</span>
+            <span class="badge text-bg-info fs-6 me-2 mb-2 text-light">CSS</span>
+            <span class="badge text-bg-info fs-6 me-2 mb-2 text-light">JavaScript</span>
+            <span class="badge text-bg-info fs-6 me-2 mb-2 text-light">Bootstrap</span>
+            <span class="badge text-bg-info fs-6 me-2 mb-2 text-light">Git</span>
+          </div>
+        </div>
+      </div>
+      </div>
+      </div>
+
+
+
+   <div class="border p-3 bg-info mt-5">
+    <h3 class="text-center text-light">Skills and Experience</h3>
+    <p class="text-center text-light">
+    I have a comprehensive skill set that covers the entire web development lifecycle. 
+    I am proficient in modern front-end technologies, including HTML, CSS, and JavaScript, as well as frameworks like Bootstrap.
+    I also have hands-on experience with popular design software like Adobe Photoshop, 
+    which allows me to seamlessly transition from design mockups to functional, pixel-perfect websites. 
+    This versatility means I can handle every phase of a project, ensuring a consistent and high-quality result.
+</p>
+</div>
     
 
 <script>
