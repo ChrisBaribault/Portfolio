@@ -176,52 +176,55 @@
 
 
      
-    <div class="bg-gray-100 flex items-center justify-center p-4">
+     <div class="flex items-center justify-center min-h-screen p-4">
+        <div class="carousel-container bg-white p-4">
+            <h1 class="font-bold text-center mb-6">About Me</h1>
+            <!-- The main Bootstrap carousel component -->
+            <div id="carouselExampleIndicators" class="carousel slide">
+                <!-- Carousel indicators (the little dots at the bottom) -->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
 
-    <!-- 
-        This is the main container that controls the carousel's width.
-        - max-w-2xl: limits the container's max width to a specific size.
-        - mx-auto: centers the container horizontally.
-        - mt-8: adds a margin to the top.
-        - rounded-lg: adds rounded corners.
-        - shadow-xl: adds a large drop shadow.
-    -->
-    <div class="max-w-2xl mx-auto mt-8 rounded-lg shadow-xl overflow-hidden">
-        
-        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-            <!-- Carousel Indicators -->
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <!-- The slides themselves -->
+                <div class="carousel-inner">
+                    <!-- First slide -->
+                    <div class="carousel-item active">
+                        <img src="./images/projects/MagazineResize.png" class="d-block w-100" alt="First slide">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Magazine Cover</h5>
+                        </div>
+                    </div>
+                    <!-- Second slide -->
+                    <div class="carousel-item">
+                        <img src="./images/projects/RestoreResize.png" class="d-block w-100" alt="Second slide">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Restored Image</h5>
+                        </div>
+                    </div>
+                    <!-- Third slide -->
+                    <div class="carousel-item">
+                        <img src="./images/projects/socialResize.png" class="d-block w-100" alt="Third slide">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Social Media Banner</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Previous and next buttons -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
-        
-            <!-- Carousel Inner Content -->
-            <div class="carousel-inner">
-                <div id="cover" class="carousel-item active">
-                    <!-- Placeholder image with a portrait (taller) aspect ratio -->
-                    <img id="magazine-page" src="images/projects/MagazineCoverexp_sm.png" class="d-block w-100" alt="Magazine Page 1">
-                </div>
-                <div class="carousel-item">
-                    <img id="restore" src="./images/projects/Restore-with-color-exp.png" class="d-block w-100" alt="Slide 2">
-                </div>
-                <div class="carousel-item">
-                    <img id="media" src="./images/projects/social-media-2-exp.png" class="d-block w-100" alt="Slide 3">
-                </div>
-            </div>
-        
-            <!-- Carousel Controls (Previous & Next) -->
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
         </div>
     </div>
-  </div>
 
     <h2 id="notes" class="text-center mt-5 text-decoration-underline">Notes</h2>
 
